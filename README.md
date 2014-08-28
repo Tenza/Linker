@@ -4,17 +4,18 @@ Website to store and share links of images and videos with friends.
 
 ###About
 
-- This project was made in 2011 and it was developed in C# using the IDE Visual Studio 2010, 2012.
+- This project was made in 2011 and it was developed in C# using the IDE Visual Studio 2010, later upgraded to 2012.
 - The project, code and comments are in English.
 - The layout was designed using Adobe Illustrator.
-- The website is not complete, it is missing the following functionalities:
+- The project is not complete, it is missing the following functionalities:
   - Administrator page for edition of image links.
   - Administrator page for edition of video links.
   - Visits are not being counted.
 
 ###Features
 
-- You can register and login.
+- You can register and login as an user.
+- You can also login with the admin "1" with the password "1".
 - Once logged, you can add links to images and youtube videos, these links will all be directly viewable and arranged.
 - It is also possible to set de visibility of each item to Public or Private.
 - You can comment on yours and others peoples videos and images.
