@@ -11,7 +11,7 @@ Website to store and share links of images and videos with friends.
   - Administrator page for edition of image links.
   - Administrator page for edition of video links.
   - Visits are not being counted.
-- You can login the following test account:
+- You can login with the following test account:
   - Username: 1
   - Password: 1
 
