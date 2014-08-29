@@ -11,12 +11,13 @@ Website to store and share links of images and videos with friends.
   - Administrator page for edition of image links.
   - Administrator page for edition of video links.
   - Visits are not being counted.
+- You can login the following test account:
+  - Username: 1
+  - Password: 1
 
 ###Features
 
-- You can register and login as an user.
-- You can also login with the admin "1" with the password "1".
-- Once logged, you can add links to images and youtube videos, these links will all be directly viewable and arranged.
+- Register and login, once logged, you can add links to images and youtube videos, these links will all be directly viewable and arranged.
 - It is also possible to set de visibility of each item to Public or Private.
-- You can comment on yours and others peoples videos and images.
+- You can comment on yours and others people’s videos and images.
 - As an administrator, you can edit and delete any content your users set.
