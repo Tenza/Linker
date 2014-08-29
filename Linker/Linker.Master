@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Linker.master.cs" Inherits="Linker.Linker" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title>Linker</title>
+	<link href="/Styles/Master.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" language="javascript">
+		//Random background
+		function get_background()
+		{
+			var image_number = 7;
+			var bg_div = document.getElementById('bg')
+			var random = Math.floor(Math.random() * image_number);
+			bg_div.style.backgroundImage = "url(../backgrounds/background" + random + ".jpg)";
+		}
+	</script>
+
+	<asp:ContentPlaceHolder ID="head" runat="server">
+	</asp:ContentPlaceHolder>
+</head>
+
+<body <%--onload="get_background()"--%>>
+	<form id="form" runat="server">
+	<div id="main">
+		<div id="bg"></div>
+		<div id="topbar">
+			<div id="tb_left"></div>
+			<div id="tb_right"></div>          
+			<a href="#"><span id="tb_pin" title="Fix/Unfix the bar on top"></span></a>
+					 
+			<div id="tb_center">
+				<div id="links">
+					<div id="general">
+						<ul>
+							<li><a href="/All/Home.aspx" title="Home Page" target="_self">Home</a></li>
+							<li><a href="/User/Images.aspx<%= get_url() %>" title="Images Page" target="_self">Images</a></li>
+							<li><a href="/User/Videos.aspx<%= get_url() %>" title="Videos Page" target="_self">Videos</a></li>
+						</ul>
+					</div>
+
+					<div id="register">
+						<asp:SiteMapDataSource ID="my_sitemap" runat="server" />
+						<asp:Menu ID="Menu" runat="server" DataSourceID="my_sitemap" 
+							Orientation="Horizontal" StaticDisplayLevels="2"
+							RenderingMode="Table" onmenuitemdatabound="Menu_MenuItemDataBound">
+							<staticmenuitemstyle ItemSpacing="10" />
+							<DynamicHoverStyle BackColor="#000000" />
+							<DynamicMenuStyle BackColor="#000000" />
+						</asp:Menu>
+					</div>
+				</div>
+			</div>
+		</div><!-- topbar -->
+	
+		<div id="center_container">
+			<div id="content">
+				<div id="cn_tleft"></div>
+				<div id="cn_tright"></div>
+				<div id="cn_tcenter">
+					<div id="message"><!--<marquee behavior="alternate" scrollamount="10">Welcome</marquee>//--></div>
+				</div>
+				<div id="cn_tgrad"></div>
+			
+				<div id="content_holder">
+					<asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+					</asp:ContentPlaceHolder>            
+				</div><!-- content_holder -->
+			
+				<div id="cn_bgrad"></div>
+				<div id="cn_bleft"></div>
+				<div id="cn_bright"></div>
+				<div id="cn_bcenter">
+					<div id="credits">Linker by Filipe Carvalho is licensed under GNU General Public License, Version 3</div>
+				</div>
+			</div><!-- content -->
+		</div>
+
+	</div><!-- main -->
+	</form>
+</body>
+</html>

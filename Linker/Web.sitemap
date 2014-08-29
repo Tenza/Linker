@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="" description="" roles="*">
+      
+        <siteMapNode url="~/All/Register.aspx" title="Register" description="Register Page" />
+        <siteMapNode url="~/User/Manager.aspx" title="Manager" description="Manager Account Page" />
+        <siteMapNode url="~/All/Logout.aspx" title="Logout" description="Logout Page" />
+      
+        <siteMapNode url="~/All/Contact_us.aspx" title="Contact Us" description="Contact Us" />
+        <siteMapNode url="~/All/About_us.aspx" title="About Us" description="About Us" />
+
+        <siteMapNode url="" title="Admin" description="" roles="Admin">
+          <siteMapNode url="~/Admin/Contact.aspx" title="Contact" description="Edit Contact Page" />
+          <siteMapNode url="~/Admin/Users.aspx" title="Users" description="Edit Users Page" />
+          <siteMapNode url="~/Admin/CommentsEdit.aspx" title="Comments" description="Edit Comments Page" />
+          <siteMapNode url="~/Admin/ImagesEdit.aspx" title="Images" description="Edit Images Page" />
+          <siteMapNode url="~/Admin/VideosEdit.aspx" title="Videos" description="Edit Videos Page" />
+        </siteMapNode>
+
+    </siteMapNode>
+</siteMap>

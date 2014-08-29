@@ -1,0 +1,256 @@
+﻿/**************************General**************************/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+#main{
+	min-width: 1024px;
+}
+
+#bg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% 100%; /*Valid CSS 3.0*/
+	background-image: url(../backgrounds/background1.jpg);
+	z-index: -1;
+	/*top: 0px; Bar always on top requires this so the bg goes under it*/
+}
+
+/**************************Topbar**************************/
+
+#topbar{
+	/* Bar always on top
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	position: fixed;
+	*/
+	width: auto;
+	height: 28px;
+}
+
+#topbar #tb_left{
+	width: 13px;
+	height: 28px;
+	float: left;
+	background-image: url(../layout/tb_left.png);
+	background-repeat: no-repeat;
+}
+
+#topbar #tb_right{
+	width: 13px;
+	height: 28px;
+	float: right;
+	background-image: url(../layout/tb_right.png);
+	background-repeat: no-repeat;
+}
+
+#topbar #tb_center{
+	width: auto;
+	height: 28px;
+	margin-left: 13px;
+	margin-right: 13px;
+	background-image: url(../layout/tb_center.png);
+	background-repeat: repeat-x;
+}
+
+#topbar #tb_pin{
+	width: 28px;
+	height: 28px;
+	float: right;
+	margin-right: 5px;
+	background-image: url(../layout/pin_fixed.png);
+	background-repeat: no-repeat;
+}
+
+/***Links***/
+
+#topbar #tb_center #links{
+	height: auto;
+	width: 900px;
+	top: 5px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	
+	/*Links text properties down here*/
+	font-family: "Myriad Pro", Calibri, Arial;
+	font-size: 0.8em;
+}
+
+#topbar #tb_center #links li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 30px;
+}
+
+#topbar #tb_center #links a:link{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#topbar #tb_center #links a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#topbar #tb_center #links a:hover{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+#topbar #tb_center #links a:active{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+#topbar #tb_center #links #general{
+	float: left;
+}
+
+#topbar #tb_center #links #register{
+	float: right;
+}
+
+/**************************Content**************************/
+
+#center_container
+{
+	text-align: center; /*Center if is adjust to content*/
+}
+
+#content{
+	width: 1024px; /*Set "Auto" for to set ajust to content*/
+	display: block; /*Adjust to content*/
+	text-align: left;
+	margin-top: 30px;
+	/*margin-top: 58px; Bar always on top requires 30px+28px(size of the bar). Comment line above*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/***Top effect***/
+
+#content #cn_tleft{
+	width: 25px;
+	height: 20px;
+	float: left;
+	background-image: url(../layout/cn_tleft.png);
+	background-repeat: no-repeat;
+}
+
+#content #cn_tright{
+	width: 25px;
+	height: 20px;
+	float: right;
+	background-image: url(../layout/cn_tright.png);
+	background-repeat: no-repeat;
+}
+
+#content #cn_tgrad{
+	width: auto;
+	height: 36px;
+	background-image: url(../layout/cn_tgrad.png);
+	background-repeat: repeat-x;
+}
+
+/***Message in the top***/
+
+#content #cn_tcenter{
+	width: auto;
+	height: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#content #cn_tcenter #message{
+	text-align: center;
+	font-family: "Myriad Pro", Calibri, Arial;
+	font-size: 0.75em;
+	font-weight: bold;
+	position: relative;
+	top: 5px;
+}
+
+/***Content holder***/
+
+#content #content_holder{
+	width: auto;
+	height: auto;
+	background-image: url(../layout/cn_bg.png);
+	background-repeat: repeat;
+	
+	/*Text Content here, if this is for other page, especify on the other page css...*/
+	padding-left: 30px;
+	padding-right: 30px;
+	
+	font-family: "Myriad Pro", Calibri, Arial;
+	text-align: justify;
+	font-size: 0.8em;
+	color: #FFF;
+}
+
+/***Bottom effect***/
+
+#content #cn_bleft{
+	width: 25px;
+	height: 20px;
+	float: left;
+	background-image: url(../layout/cn_bleft.png);
+	background-repeat: no-repeat;
+}
+
+#content #cn_bright{
+	width: 25px;
+	height: 20px;
+	float: right;
+	background-image: url(../layout/cn_bright.png);
+	background-repeat: no-repeat;
+}
+
+#content #cn_bgrad{
+	width: auto;
+	height: 36px;
+	background-image: url(../layout/cn_bgrad.png);
+	background-repeat: repeat-x;
+}
+
+/***Credits***/
+
+#content #cn_bcenter{
+	width: auto;
+	height: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#content #cn_bcenter #credits{
+	text-align: center;
+	font-family: "Myriad Pro", Calibri, Arial;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+#content #cn_bcenter #credits a:link{
+	color: #000;
+	text-decoration: none;
+}
+
+#content #cn_bcenter #credits a:visited{
+	color: #000;
+	text-decoration: none;
+}
+
+#content #cn_bcenter #credits a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+
+#content #cn_bcenter #credits a:active{
+	color: #000;
+	text-decoration: underline;
+}
