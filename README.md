@@ -21,3 +21,7 @@ Website to store and share links of images and videos with friends.
 - It is also possible to set de visibility of each item to Public or Private.
 - You can comment on yours and others people’s videos and images.
 - As an administrator, you can edit and delete any content your users set.
+
+##Application
+
+[![Click here to view the image!](http://s28.postimg.org/pdtqzwpa5/Image_3.png)](http://s28.postimg.org/pdtqzwpa5/Image_3.png)
